@@ -15,7 +15,6 @@
 		FA1425CB2B30F86A009484CB /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1425CA2B30F86A009484CB /* RegisterView.swift */; };
 		FA1425CD2B30F87C009484CB /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1425CC2B30F87C009484CB /* TimerView.swift */; };
 		FA1425CF2B310098009484CB /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1425CE2B310098009484CB /* TimeCounter.swift */; };
-		FA1425D22B31A8CF009484CB /* SendData_SwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA1425D02B31A8CF009484CB /* SendData_SwiftUI.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +27,6 @@
 		FA1425CA2B30F86A009484CB /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		FA1425CC2B30F87C009484CB /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		FA1425CE2B310098009484CB /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
-		FA1425D12B31A8CF009484CB /* SendData_SwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SendData_SwiftUI.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				FA1425B52B30F3CF009484CB /* SendData_SwiftUIApp.swift */,
-				FA1425D02B31A8CF009484CB /* SendData_SwiftUI.xcdatamodeld */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -182,7 +179,6 @@
 				FA1425CF2B310098009484CB /* TimeCounter.swift in Sources */,
 				FA1425C72B30F51C009484CB /* UserManager.swift in Sources */,
 				FA1425B62B30F3CF009484CB /* SendData_SwiftUIApp.swift in Sources */,
-				FA1425D22B31A8CF009484CB /* SendData_SwiftUI.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,19 +384,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FA1425D02B31A8CF009484CB /* SendData_SwiftUI.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FA1425D12B31A8CF009484CB /* SendData_SwiftUI.xcdatamodel */,
-			);
-			currentVersion = FA1425D12B31A8CF009484CB /* SendData_SwiftUI.xcdatamodel */;
-			path = SendData_SwiftUI.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FA1425AA2B30F3CF009484CB /* Project object */;
 }

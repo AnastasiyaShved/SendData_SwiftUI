@@ -22,6 +22,8 @@ struct TimerView: View {
             Spacer()
             ButtonView()
                 .environmentObject(timer)
+            Spacer()
+            ButtonLogOut()
         }
     }
 }
@@ -44,12 +46,28 @@ struct ButtonView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(Color.black, lineWidth: 4)
         )
-        
-        
-        
-        
     }
 }
+
+struct ButtonLogOut: View {
+
+    var body: some View {
+        Button(action: { print("LogOut") }) {
+            Text("LogOut")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+        }
+        .frame(width: 200, height: 60)
+        .background(Color.orange)
+        .cornerRadius(20)
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(Color.black, lineWidth: 4)
+        )
+    }
+}
+
 
 #Preview {
     TimerView()
