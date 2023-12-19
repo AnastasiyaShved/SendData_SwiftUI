@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		FA1425B62B30F3CF009484CB /* SendData_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1425B52B30F3CF009484CB /* SendData_SwiftUIApp.swift */; };
-		FA1425B82B30F3CF009484CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1425B72B30F3CF009484CB /* ContentView.swift */; };
 		FA1425BA2B30F3D0009484CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1425B92B30F3D0009484CB /* Assets.xcassets */; };
 		FA1425BD2B30F3D0009484CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1425BC2B30F3D0009484CB /* Preview Assets.xcassets */; };
+		FA1425C72B30F51C009484CB /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1425C62B30F51C009484CB /* UserManager.swift */; };
+		FA1425C92B30F770009484CB /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1425C82B30F770009484CB /* StartView.swift */; };
+		FA1425CB2B30F86A009484CB /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1425CA2B30F86A009484CB /* RegisterView.swift */; };
+		FA1425CD2B30F87C009484CB /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1425CC2B30F87C009484CB /* TimerView.swift */; };
+		FA1425CF2B310098009484CB /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1425CE2B310098009484CB /* TimeCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA1425B22B30F3CF009484CB /* SendData_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendData_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1425B52B30F3CF009484CB /* SendData_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendData_SwiftUIApp.swift; sourceTree = "<group>"; };
-		FA1425B72B30F3CF009484CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA1425B92B30F3D0009484CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA1425BC2B30F3D0009484CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA1425C62B30F51C009484CB /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		FA1425C82B30F770009484CB /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		FA1425CA2B30F86A009484CB /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		FA1425CC2B30F87C009484CB /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		FA1425CE2B310098009484CB /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		FA1425B42B30F3CF009484CB /* SendData_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				FA1425B52B30F3CF009484CB /* SendData_SwiftUIApp.swift */,
-				FA1425B72B30F3CF009484CB /* ContentView.swift */,
+				FA1425C32B30F4C7009484CB /* App */,
+				FA1425C42B30F4CF009484CB /* Views */,
+				FA1425C52B30F4E2009484CB /* ObservableObject */,
 				FA1425B92B30F3D0009484CB /* Assets.xcassets */,
 				FA1425BB2B30F3D0009484CB /* Preview Content */,
 			);
@@ -65,6 +74,33 @@
 				FA1425BC2B30F3D0009484CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA1425C32B30F4C7009484CB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA1425B52B30F3CF009484CB /* SendData_SwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FA1425C42B30F4CF009484CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA1425C82B30F770009484CB /* StartView.swift */,
+				FA1425CA2B30F86A009484CB /* RegisterView.swift */,
+				FA1425CC2B30F87C009484CB /* TimerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA1425C52B30F4E2009484CB /* ObservableObject */ = {
+			isa = PBXGroup;
+			children = (
+				FA1425C62B30F51C009484CB /* UserManager.swift */,
+				FA1425CE2B310098009484CB /* TimeCounter.swift */,
+			);
+			path = ObservableObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1425B82B30F3CF009484CB /* ContentView.swift in Sources */,
+				FA1425CD2B30F87C009484CB /* TimerView.swift in Sources */,
+				FA1425C92B30F770009484CB /* StartView.swift in Sources */,
+				FA1425CB2B30F86A009484CB /* RegisterView.swift in Sources */,
+				FA1425CF2B310098009484CB /* TimeCounter.swift in Sources */,
+				FA1425C72B30F51C009484CB /* UserManager.swift in Sources */,
 				FA1425B62B30F3CF009484CB /* SendData_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
